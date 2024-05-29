@@ -31,10 +31,6 @@ public class removelastLL {
         tail.next = newNode;
         tail = newNode;
     }
-    public void removelast(){
-        
-    }
-
     public void middadd(int data, int idx) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -65,7 +61,33 @@ public class removelastLL {
             System.out.print(temp.data + "->");
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("null");
+    }
+    int sizee=0;
+    public int size() {
+         
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sizee++;
+        }
+        return sizee;
+    }
+    public void removelast(){
+    if(sizee==0){
+        System.out.println("LL is empty");
+        return;
+    }
+    else if(sizee==1){
+    head=tail=null;
+    return;
+    }
+    Node temp=head;
+    for(int i=0;i<sizee-2;i++){
+    temp=temp.next;
+    }
+    temp.next=null;
+    sizee--;
     }
 
     public static void main(String args[]) {
@@ -74,7 +96,9 @@ public class removelastLL {
         ll.addFirst(1);
         ll.addLast(4);
         ll.middadd(3, 2);
-        ll.removefirst();
+        System.out.println(ll.size());
+        ll.removelast();
+        // ll.removefirst();
         ll.print();
     }
 }
