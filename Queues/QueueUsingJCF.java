@@ -1,4 +1,4 @@
-package DSA.Queue;
+package Queues;
 import java.util.*;
 public class QueueUsingJCF {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DSA.Queue;
+package Queues;
 import java.util.*;
 public class Interleaves2halves {
     public static void queue(Queue<Integer>q){

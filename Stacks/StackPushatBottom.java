@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Stacks;
 import java.util.*;
 public class StackPushatBottom {
     public static void pushAt(Stack<Integer> s,int data){

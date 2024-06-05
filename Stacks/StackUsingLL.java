@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Stacks;
 
 public class StackUsingLL {
     public static class Node{

@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Stacks;
 import java.util.Stack;
 public class NextGreaterElement {
     public static void NGE(Stack<Integer> s,int arr[]){

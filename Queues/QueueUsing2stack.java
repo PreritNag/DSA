@@ -1,4 +1,4 @@
-package DSA.Queue;
+package Queues;
 import java.util.*;
 public class QueueUsing2stack {
     public static class Queue{

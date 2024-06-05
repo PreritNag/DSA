@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Stacks;
 import java.util.Stack;
 public class reverseStack {
    public static void pushAtBottom(Stack<Integer> s,int data){

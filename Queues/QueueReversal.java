@@ -1,4 +1,4 @@
-package DSA.Queue;
+package Queues;
 import java.util.*;
 public class QueueReversal {
     public static void reverse(Queue<Integer> q){

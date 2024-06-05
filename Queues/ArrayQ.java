@@ -1,4 +1,4 @@
-package DSA.Queue;
+package Queues;
 import java.util.*;
 
 import javax.management.Query;
