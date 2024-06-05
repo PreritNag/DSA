@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 public class SubArray {
     public static void Subarray(int arr[]){

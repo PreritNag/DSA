@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 public class MaximumSubarraySum {
     public static int SubSum(int arr[]){

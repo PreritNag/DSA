@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 public class MaxSubArray2 {
  public static int SubArray(int arr[]){

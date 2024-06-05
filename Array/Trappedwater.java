@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 public class Trappedwater {
 public static int trappingwater(int arr[],int width){

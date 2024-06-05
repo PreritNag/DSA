@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 public class stockprice {
     public static int stock(int arr[]){
