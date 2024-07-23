@@ -37,7 +37,7 @@ public class Inorder {
         INorder(root.right);
     }
     public static void main(String args[]) {
-        int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        int nodes[] = {5,3,2,1,-1,-1,-1,4,-1,-1,6,-1,8,7,-1,-1,9,-1,-1 };
         binarytree tree = new binarytree();
         Node root = tree.builttree(nodes);
         System.out.println(root.data);

@@ -15,7 +15,7 @@ public class SubArray {
         }
     }
      public static void main(String args[]) {
-        int arr[] = new int[5];
+        int arr[] = new int[4];
         System.out.println("Enter a number");
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < arr.length; i++) {
