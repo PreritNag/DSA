@@ -1,4 +1,4 @@
-package Array;
+package DSA.Array;
 
 import java.util.*;
 public class SubArray {
