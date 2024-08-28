@@ -38,6 +38,7 @@ public class LevelTree {
         q.add(null);
         while(!q.isEmpty()){
             Node currNode=q.remove();
+            System.out.println(currNode);
             if(currNode==null){
                 System.out.println();
             if(q.isEmpty()){
