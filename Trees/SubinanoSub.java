@@ -61,7 +61,7 @@ public class SubinanoSub {
 
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 3, -1, -1, 4, -1, -1, 3, -1, 4, -1, -1 };
-        int subnodes[] = { 2, 3, -1, -1, 1, 4, -1, -1, -1, -1 };
+        int subnodes[] = { 2, 3, -1, -1, 4, -1, -1, -1, -1 };
         binarytree tree = new binarytree();
         Node root = tree.buildTreeWithReset(nodes);
         Node subroot = tree.buildTreeWithReset(subnodes);

@@ -1,20 +1,17 @@
 package Trees;
-
 import java.util.*;
 
-public class LevelTree {
-    static class Node {
+public class swap {
+    public static class Node{
         int data;
         Node left;
         Node right;
-
         Node(int data) {
             this.data = data;
             this.left = null;
             this.right = null;
         }
     }
-    
     public static class binarytree {
         static int idx = -1;
 
@@ -28,8 +25,20 @@ public class LevelTree {
             newNode.right = builttree(nodes);
             return newNode;
         }
+}
+
+public static Node swap(Node root){
+    if(root==null){
+        return null;
     }
-    public static void level(Node root){
+    Node temp=root.left;
+    root.left=root.right;
+    root.right=temp;
+    swap(root.left);
+    swap(root.right);
+    return root;
+}
+public static void level(Node root){
         if(root==null){
             return ;
         }
@@ -39,7 +48,6 @@ public class LevelTree {
         while(!q.isEmpty()){
             Node currNode=q.remove();
             if(currNode==null){
-                System.out.println();
             if(q.isEmpty()){
                 break;
             }else{
@@ -57,10 +65,11 @@ public class LevelTree {
     }}
     
 }
+
 public static void main(String args[]) {
-        int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
-        binarytree tree = new binarytree();
-        Node root = tree.builttree(nodes);
-        level(root);
+    int nodes[] = {4,2,1,-1,-1,3,-1,-1,7,6,-1,-1,9,-1,-1};
+    binarytree tree = new binarytree();
+    Node root = tree.builttree(nodes);
+    level(swap(root));
 }
 }
