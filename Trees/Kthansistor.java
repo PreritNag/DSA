@@ -2,7 +2,7 @@ package Trees;
 
 import java.util.ArrayList;
 
-public class lca {
+public class Kthansistor {
     public static class Node{
         int data;
         Node left;
@@ -26,8 +26,7 @@ public class lca {
             newNode.right = builttree(nodes);
             return newNode;
         }
-    }
-    public static boolean  pathfinder(Node root,ArrayList<Integer> path,int n){
+    }    public static boolean  pathfinder(Node root,ArrayList<Integer> path,int n){
         if(root==null){
             return false;
         }
@@ -43,17 +42,16 @@ public class lca {
        path.remove(path.size()-1);
        return false;
     }
-    public static void lowestcomans(Node root,int n1,int n2){
-        ArrayList<Integer> path1=new ArrayList<>();
-        ArrayList<Integer> path2=new ArrayList<>();
-        pathfinder(root,path1,n1);
-        pathfinder(root,path2,n2);
-        
+    public static void kthans(Node root,int k,int n){
+        ArrayList<Integer> path=new ArrayList<>();
+        pathfinder(root,path,k);
+        int s=path.size()-1;
+       System.out.println(path.get(s-n));
     }
     public static void main(String args[]) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,6,-1,-1,7,-1,-1};
         binarytree tree = new binarytree();
         Node root = tree.builttree(nodes);
-        lowestcomans(root,4,6);
+        kthans(root, 5, 1);
     }
 }
