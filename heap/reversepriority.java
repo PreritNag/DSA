@@ -10,8 +10,9 @@ public class reversepriority {
     pq.add(-1);
     pq.add(6);
     pq.add(3);
-    while(!pq.isEmpty()){
-        System.out.println(pq.peek());
-        pq.remove();
-    }  
+    // while(!pq.isEmpty()){
+    //     System.out.println(pq.peek());
+    //     pq.remove();
+    // }  
+    System.out.println(pq.peek());
 }}

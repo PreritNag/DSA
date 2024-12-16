@@ -9,7 +9,7 @@ public class createmap {
         map.put("kapil",10);
         map.put("manjeet",5);
         System.out.println(map);
-        int mark=map.get("prerit");
+        int mark=map.get("prerit"); 
         System.out.println(mark);
         System.out.println(map.containsKey("sarthak"));
         map.remove("manjeet");
